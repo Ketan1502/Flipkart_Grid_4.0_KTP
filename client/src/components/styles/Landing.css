@@ -1,0 +1,169 @@
+/* #71C9CE #A6E3E9 #CBF1F5  #E3FDFD #0dcaf0*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  height: 100vh;
+  width: 100wh;
+}
+
+.container {
+  top: 9%;
+  left: 10%;
+  width: 80vw;
+  height: 80vh;
+  position: absolute;
+  border-radius: 50px;
+  backdrop-filter: blur(20px);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), #e9e3fdf4);
+  box-shadow: 0px 10px 20px 0px rgba(69, 146, 255, 0.889);
+}
+
+#pic img {
+  position: absolute;
+  top: 31%;
+  left: 55%;
+  height: 40vh;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 40px 4px;
+}
+
+/********** COLOR CHANGING EFFECT **********/
+
+@keyframes color-change {
+  0% {
+    color: #4d3098;
+  }
+
+  25% {
+    color: #5a1dbd;
+  }
+
+  50% {
+    color: #6735f1;
+  }
+
+  75% {
+    color: #706199;
+  }
+
+  100% {
+    color: #221441;
+  }
+}
+
+/*********** MAIN CONTENT ************/
+
+.typewriter {
+  position: absolute;
+  top: 31.5%;
+  left: 16%;
+  color: #4d167a;
+}
+
+.typewriter p {
+  padding-top: 25px;
+  font-size: 115%;
+  color: #143e41;
+  animation: color-change 4s infinite;
+}
+
+.typewriter span {
+  color: #be107c;
+  font-size: 120%;
+}
+
+/************* NAVBAR ***********/
+
+#logo {
+  color: #be107c;
+  font-size: 140%;
+  padding-left: 7%;
+  padding-top: 8px;
+}
+
+.navbar {
+  width: 79vw;
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #6c1eac13;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  padding: 0 40px 0 5px;
+  color: #4d167a;
+}
+
+.navbarLink {
+  text-decoration: none;
+  color: #4d167a;
+}
+
+/************* RUBBERBAND ANIMATION ************/
+
+.navbar ul li:hover {
+  animation: rubberBand linear 1s;
+  animation-iteration-count: 3;
+}
+
+#pic img:hover {
+  animation: rubberBand linear 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/********** COLORED WATCHIT TEXT ***********/
+
+#color {
+  color: #be107c;
+  font-weight: bolder;
+}
+
+/********** BOOTSTRAP ICONS *************/
+.bi {
+  color: #430b98;
+  font-size: large;
+  font-weight: bold;
+  padding: 0 10px;
+}

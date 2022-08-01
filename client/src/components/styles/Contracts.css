@@ -1,0 +1,50 @@
+.viewLink {
+    text-decoration: none;
+    color: #be107c;
+    border: 2px solid #be107c;
+    padding: 5px 20px;
+}
+
+.viewLink:hover {
+    background-color: #be107c;
+    color: white;
+}
+
+#contract-p {
+    width: 80%;
+
+    background-image: linear-gradient(
+    -225deg,
+    #3d31e3 0%,
+    #6a1ac0 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.formInputs {
+    display: flex;
+    margin-bottom: 2%;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+#card-cont {
+    position: absolute;
+    left: 35%;
+    width: 70%;
+}

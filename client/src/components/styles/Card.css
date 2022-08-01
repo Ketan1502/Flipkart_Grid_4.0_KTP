@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  color: #4d167a;
+  padding: 5% 10%;
+  border-radius: 5%;
+  font-family: 'Lora';
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eb9afc;
+  transition: border-radius 1.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card:hover {
+  border-radius: 10%;
+  transition-timing-function: ease;
+}
+
+.card__name {
+  margin-top: 5px;
+}
